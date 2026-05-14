@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 add_library(common INTERFACE)
-target_link_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src/)
+target_include_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 
 
@@ -15,5 +15,11 @@ target_link_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src/)
 
 
 
-add_executable(tabs src/tabs.cpp "src/common.h")
+add_executable(tabs src/tabs.cpp)
 target_link_libraries(tabs PRIVATE common)
+
+add_executable(qucksort src/algorithms/qucksort.cpp)
+target_link_libraries(qucksort PRIVATE common)
+
+add_executable(countsort src/algorithms/countsort.cpp)
+target_link_libraries(countsort PRIVATE common)

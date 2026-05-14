@@ -4,3 +4,4 @@
 #include <locale>
 #include <Windows.h>
 #include<cmath>
+#include <algorithm>
