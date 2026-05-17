@@ -15,5 +15,8 @@ target_include_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src/)
 
 
 
-add_executable(errfile src/errfile.cpp )
+add_executable(errfile src/errfile.cpp)
 target_link_libraries(errfile PRIVATE common)
+
+add_executable(smartarray src/raii/smartarray.cpp )
+target_link_libraries(smartarray PRIVATE common)
