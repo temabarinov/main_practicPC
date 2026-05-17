@@ -4,37 +4,41 @@ class smartarray {
 private:
 	int* arr = nullptr;
 	int size = 0;
-public:
 	int count = 0;
-	smartarray(int a) : arr{ new int[a]()}, size{a - 1} {
+public:
+	
+	smartarray(int _size) : arr{ new int[_size]()}, size{_size - 1} {
 	}
 	~smartarray() {
 		if (arr != nullptr) {
 			delete[] arr;
 	} 
 	}
-	void add_element(int b) {
+	void add_element(int new_element) {
 		if (count > size) {
 			throw std::exception("error. array is full");
 		}
-		arr[count] = b;
+		arr[count] = new_element;
 		count++;
 
 	}
-	int get_element(int indx) {
-		return arr[indx];
+	int get_element(int element_num) {
+		if (element_num > size || element_num < 0) {
+			throw std::exception("error. index does not exist");
+		}
+		return arr[element_num];
 	}
 
-	smartarray& operator=(const smartarray& b) {
-		if (this == &b) {
+	smartarray& operator=(const smartarray& assigned) {
+		if (this == &assigned) {
 			return *this;
 		}
 		delete[] arr;
-		size == b.size;
-		count == b.count;
+		size == assigned.size;
+		count == assigned.count;
 
 		for (int i = 0;i < count;i++) {
-			arr[i] = b.arr[i];
+			arr[i] = assigned.arr[i];
 			
 		}
 		return *this;

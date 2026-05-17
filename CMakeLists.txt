@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 add_library(common INTERFACE)
+
 target_include_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src/)
 
 
@@ -20,3 +21,13 @@ target_link_libraries(errfile PRIVATE common)
 
 add_executable(smartarray src/raii/smartarray.cpp )
 target_link_libraries(smartarray PRIVATE common)
+
+add_executable(countsort src/algorithms/countsort.cpp )
+target_link_libraries(countsort PRIVATE common)
+
+add_executable(leetcodetest src/leetcodetest.cpp )
+target_link_libraries(leetcodetest PRIVATE common)
+
+
+add_executable(quicksort src/algorithms/qucksort.cpp )
+target_link_libraries(quicksort PRIVATE common)

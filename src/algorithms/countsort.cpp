@@ -24,6 +24,7 @@ void count_sort(std::vector<int>& arr) {
 
 
 
+
 int main(int argc, char** argv) {
 	std::vector<int> arr = { 19, 14, 22, 22,17, 22, 13, 21, 20, 24, 18, 10, 17, 16, 17, 20, 22, 11, 20, 16, 14, 13, 10, 22, 18, 14, 16, 24, 19, 17 };
 	std::cout << "Массив до сортировки: ";
@@ -60,7 +61,7 @@ int main(int argc, char** argv) {
 		std::cout << i << " ";
 	}
 	
-
+	
 	
 
 
