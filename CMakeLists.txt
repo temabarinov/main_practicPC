@@ -25,9 +25,19 @@ target_link_libraries(smartarray PRIVATE common)
 add_executable(countsort src/algorithms/countsort.cpp )
 target_link_libraries(countsort PRIVATE common)
 
-add_executable(leetcodetest src/leetcodetest.cpp )
-target_link_libraries(leetcodetest PRIVATE common)
+
 
 
 add_executable(quicksort src/algorithms/qucksort.cpp )
 target_link_libraries(quicksort PRIVATE common)
+
+
+
+add_executable(func src/templates/func.cpp )
+target_link_libraries(func PRIVATE common)
+
+add_executable(templateclass src/templates/templateclass.cpp )
+target_link_libraries(templateclass PRIVATE common)
+
+add_executable(functor src/templates/functor.cpp )
+target_link_libraries(functor PRIVATE common)
