@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include <vector>
 #include <locale>
-#include <Windows.h>
-#include<cmath>
+#include <vector>
+
 #include <algorithm>
+#include <cmath>
