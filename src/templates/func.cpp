@@ -1,14 +1,14 @@
 #include"common.h"
- 
-int function(int argument) {
+ template<typename T>
+T function(T argument) {
 	
 	return argument * argument;
 
 
 
 }
-
-std::vector<int>& function(std::vector<int>& argument) {
+template<typename T>
+std::vector<T>& function(std::vector<T>& argument) {
 
 	for (int i = 0;i < argument.size();i++) {
 		argument[i] *= argument[i];
