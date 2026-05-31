@@ -41,3 +41,15 @@ target_link_libraries(templateclass PRIVATE common)
 
 add_executable(functor src/templates/functor.cpp )
 target_link_libraries(functor PRIVATE common)
+
+add_executable(count_simv src/stl/count_simv.cpp )
+target_link_libraries(count_simv PRIVATE common)
+
+
+add_executable(doubles src/stl/doubles.cpp )
+target_link_libraries(doubles PRIVATE common)
+
+add_executable(myvector src/stl/myvector.cpp )
+target_link_libraries(myvector PRIVATE common)
+
+
