@@ -44,6 +44,9 @@ public:
 	
 
 	T at(int a) {
+		if (a >= size1) {
+			throw runtime_error("index not in array");
+		}
 		return data1[a];
 	}
 
@@ -66,11 +69,12 @@ int main(int argc, char** argv) {
 	a.push_back1('a');
 	a.push_back1('v');
 	a.push_back1('v');
-	
-	cout << a.at(2);
-	
+	try {
+		cout << a.at(5);
+	}
+	catch (const exception& err) { cout << err.what(); };
 
-
+	
 
 
 
