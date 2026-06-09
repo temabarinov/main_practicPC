@@ -2,8 +2,11 @@
 #include <iostream>
 #include <vector>
 #include <locale>
+#include <string>
 #include <Windows.h>
 #include<cmath>
 #include <algorithm>
 #include<map>
 #include<set>
+#include<fstream>
+

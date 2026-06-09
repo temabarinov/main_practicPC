@@ -52,4 +52,13 @@ target_link_libraries(doubles PRIVATE common)
 add_executable(myvector src/stl/myvector.cpp )
 target_link_libraries(myvector PRIVATE common)
 
+add_executable(delete_dubles src/stl/delete_dubles.cpp )
+target_link_libraries(delete_dubles PRIVATE common)
+
+add_executable(printcont src/stl/printcont.cpp )
+target_link_libraries(printcont PRIVATE common)
+
+
+
+
 

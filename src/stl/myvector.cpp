@@ -65,6 +65,7 @@ public:
 
 
 int main(int argc, char** argv) {
+	
 	myvector<char> a;
 	a.push_back1('a');
 	a.push_back1('v');
@@ -76,7 +77,7 @@ int main(int argc, char** argv) {
 
 	
 
-
+	
 
 
 	return 0;
