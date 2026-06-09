@@ -2,17 +2,11 @@
 using namespace std;
 
 vector<int> delete_dub(vector<int>& v) {
-	vector<int>::iterator a;
-	a = v.begin();
-	for (a;a != v.end();a++) {
-		if (count(v.begin(), v.end(), *a) > 1) {
-			auto del=remove(a+1, v.end(), *a);
-			v.erase(del, v.end());
-
-
-
-		}
-	}
+	sort(v.begin(), v.end());
+	auto del = unique(v.begin(), v.end());
+	v.erase(del, v.end());
+	
+	
 	return v;
 	
 	

@@ -1,7 +1,7 @@
 #include "common.h"
 using namespace std;
 template<typename T>
-void print(T a) {
+void print(const T& a) {
 	for (auto i : a) {
 		cout << i;
 	}
