@@ -9,4 +9,5 @@
 #include<map>
 #include<set>
 #include<fstream>
+#include <memory>
 

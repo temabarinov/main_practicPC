@@ -59,6 +59,18 @@ add_executable(printcont src/stl/printcont.cpp )
 target_link_libraries(printcont PRIVATE common)
 
 
+add_executable(uniq src/smartptr/uniq.cpp )
+target_link_libraries(uniq PRIVATE common)
+
+
+add_executable(fix src/smartptr/fix.cpp )
+target_link_libraries(fix PRIVATE common)
+
+
+add_executable(myuniqueptr src/smartptr/myuniqueptr.cpp )
+target_link_libraries(myuniqueptr PRIVATE common)
+
+
 
 
 
