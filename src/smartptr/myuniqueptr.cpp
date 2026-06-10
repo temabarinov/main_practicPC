@@ -1,4 +1,5 @@
 #include "common.h"
+
 using namespace std;
 template<typename T>
 class myptr {
@@ -14,7 +15,13 @@ public:
 
 	}
 	T& operator*() {
-		return *Data;
+		if (Data != nullptr) {
+			return *Data;
+		}
+		else {
+			throw runtime_error("Data is null");
+		}
+		
 	}
 	T* release() {
 		T* temp = Data;
@@ -31,8 +38,8 @@ int main() {
 	myptr<int> a(new int[10]);
 	myptr<int> b;
 	a[0] = 10;
-	b = a.release();
-	cout << b[0];
+	
+	
 	
 
 
